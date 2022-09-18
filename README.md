@@ -31,3 +31,24 @@ Users should be able to:
 - JS
 
 ### What I learned
+
+- Applying transitions only after the page loads
+  - If you apply CSS transitions to DOM elements, the transitions will activate upon the page loading.
+  - To override this wonky behaviour:
+    1. Set the `<body>` element to have the `class="preload"`
+    2. Set all children of the body to have no transitions:
+      ```
+      .preload * {
+        transition: none !important;
+      }
+      ```
+    3. Remove the preload class when the page is finished loading:
+      ```
+      elements = document.getElementsByClassName("preload");
+
+      window.onload = function () {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].classList.remove("preload");
+        }
+      };
+      ```
