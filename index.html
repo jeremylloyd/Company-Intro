@@ -15,9 +15,22 @@
   <script src="app.js" defer></script>
 </head>
 <body class="preload">
+  <dialog>
+    <img id="menu-close" src="./images/icon-close-menu.svg" alt="icon-menu-close">
+    <ul>
+      <li><button>Features <img src="images/icon-arrow-down.svg"></button></li>
+      <li><button>Company <img src="images/icon-arrow-down.svg"></button></li>
+      <li><a href="">Careers</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+    <ul class="admin">
+      <li class="btn-admin"><a href="">Login</a></li>
+      <li class="btn-admin" id="register"><a href="">Register</a></li>
+    </ul>
+  </dialog>
   <div class="flex-col section-main">
     <header class="flex-row">
-      <a class="flex-row" href=""><img src="./images/logo.svg" alt="logo-snap"></a>
+      <a href=""><img src="./images/logo.svg" alt="logo-snap"></a>
       <ul class="desktop">
         <li><button>Features</button></li>
         <li><button>Company</button></li>
@@ -28,7 +41,7 @@
         <a href="">Login</a>
         <a href="">Register</a>
       </div>
-      <img src="./images/icon-menu.svg" alt="icon-menu">
+      <button id="menu"><img src="./images/icon-menu.svg" alt="icon-menu"></button>
     </header>
     <main class="flex-col">
       <section id="hero">
@@ -56,18 +69,5 @@
       Coded by <a href="https://github.com/jeremylloyd/Company-Intro">Jeremy Lloyd</a>.
     </footer>
   </div>
-  <aside>
-    <img src="./images/icon-close-menu.svg" alt="icon-menu-close">
-    <ul>
-      <li><button>Features</button></li>
-      <li><button>Company</button></li>
-      <li><a href="">Careers</a></li>
-      <li><a href="">About</a></li>
-    </ul>
-    <div>
-      <a href="">Login</a>
-      <a href="">Register</a>
-    </div>
-  </aside>
 </body>
 </html>
