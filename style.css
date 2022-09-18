@@ -47,6 +47,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   font-family: "Epilogue";
+  overflow-x: hidden;
 }
 
 .section-main {
