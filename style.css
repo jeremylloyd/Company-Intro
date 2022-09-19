@@ -46,12 +46,12 @@ button {
   border: none;
   background: none;
   cursor: pointer;
-  color: var(--theme-grey);
   font-size: 16px;
 }
 
-a {
-  color: var(--theme-grey);
+a:hover {
+  color: var(--theme-black);
+  cursor: pointer;
 }
 
 body {
@@ -111,7 +111,6 @@ img {
 .btn-admin {
   border-radius: 1rem;
   font-size: 14px;
-  transition: background-color 150ms ease-out, color 150ms ease-out;
   text-align: center;
 }
 
@@ -157,14 +156,24 @@ dialog ul {
   width: 100%;
 }
 
-dialog li img {
+.icon-arrow {
   margin-left: 10px;
+}
+
+.icon-spacer {
+  width: 30px;
 }
 
 li > a, li > button {
   padding: 12px;
+  max-height: 2.7rem;
   display: block;
   width: 100%;
+  color: var(--theme-grey);
+}
+
+li > button:hover {
+  color: var(--theme-black);
 }
 
 dialog li > button {
@@ -175,6 +184,20 @@ dialog li > button {
   border: solid 2px var(--theme-grey);
 }
 
+#register:hover {
+  border-color: var(--theme-black);
+}
+
 #menu-close {
   cursor: pointer;
+}
+
+.subheader {
+  padding-left: 30px;
+  display: flex;
+}
+
+.menu-collapsed {
+  max-height: 2.7rem;
+  overflow: hidden;
 }
