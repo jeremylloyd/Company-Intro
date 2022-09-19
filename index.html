@@ -49,7 +49,7 @@
       <li><a href="">Careers</a></li>
       <li><a href="">About</a></li>
     </ul>
-    <ul class="admin">
+    <ul>
       <li class="btn-admin"><a href="">Login</a></li>
       <li class="btn-admin" id="register"><a href="">Register</a></li>
     </ul>
@@ -57,21 +57,31 @@
   <div class="flex-col section-main">
     <header class="flex-row">
       <a href=""><img src="./images/logo.svg" alt="logo-snap"></a>
-      <ul class="desktop">
-        <li><button>Features</button></li>
-        <li><button>Company</button></li>
+      <ul class="desktop mr-auto">
+        <li>
+          <button id="features">
+            Features
+            <img class="icon-arrow" src="images/icon-arrow-down.svg">
+          </button>
+        </li>
+        <li>
+          <button id="company">
+            Company
+            <img class="icon-arrow" src="images/icon-arrow-down.svg">
+          </button>
+        </li>
         <li><a href="">Careers</a></li>
         <li><a href="">About</a></li>
       </ul>
-      <div class="desktop">
-        <a href="">Login</a>
-        <a href="">Register</a>
-      </div>
-      <button id="menu"><img src="./images/icon-menu.svg" alt="icon-menu"></button>
+      <ul class="desktop">
+        <li class="btn-admin"><a href="">Login</a></li>
+        <li class="btn-admin" id="register"><a href="">Register</a></li>
+      </ul>
+      <button id="menu" class="mobile"><img src="./images/icon-menu.svg" alt="icon-menu"></button>
     </header>
-    <main class="flex-col">
+    <main>
       <section id="hero">
-        <img src="./images/image-hero-mobile.png" alt="hero">
+        <img class="mobile" src="./images/image-hero-mobile.png" alt="hero">
         <img class="desktop" src="./images/image-hero-desktop.png" alt="hero">
       </section>
       <section id="desc">

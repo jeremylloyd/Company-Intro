@@ -32,7 +32,6 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
 }
 
 .flex-col {
@@ -66,11 +65,24 @@ body {
 header {
   padding: 20px 15px;
   justify-content: space-between;
+  width: 100vw;
+  font-size: 14px;
+  gap: 40px;
+}
+
+header button {
+  font-size: 14px;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 main {
   max-width: 375px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -200,4 +212,28 @@ dialog li > button {
 .menu-collapsed {
   max-height: 2.7rem;
   overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .desktop {
+    display: unset;
+  }
+
+  ul.desktop {
+    display: flex;
+  }
+
+  header {
+    padding: 20px 30px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  main {
+    max-width: unset;
+    text-align: unset;
+    flex-direction: row-reverse;
+  }
 }
