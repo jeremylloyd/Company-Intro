@@ -52,3 +52,7 @@ Users should be able to:
         }
       };
       ```
+- Spacing things nicely
+  - Write all the HTML first! This includes dropdown menu contents, aside menus, etc.
+  - If you want several elements in different places to have the same width/spacing/etc., create a container for them instead of setting margins for each element individually
+  - When designing HTML (before writing code), also think about the states different elements will be in and what states will be shared between different elements. Not doing so seems to result in CSS sprawl
