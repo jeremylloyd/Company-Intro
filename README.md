@@ -52,7 +52,8 @@ Users should be able to:
         }
       };
       ```
-- Spacing things nicely
+- Keeping CSS manageable
   - Write all the HTML first! This includes dropdown menu contents, aside menus, etc.
   - If you want several elements in different places to have the same width/spacing/etc., create a container for them instead of setting margins for each element individually
   - When designing HTML (before writing code), also think about the states different elements will be in and what states will be shared between different elements. Not doing so seems to result in CSS sprawl
+  - Don't mix utility CSS classes and CSS for specific elements. I tried doing that this project and it ended with a big mess. Either go all in or keep styling elements individually
