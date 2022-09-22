@@ -204,14 +204,40 @@ dialog li > button {
   cursor: pointer;
 }
 
-.subheader {
+dialog .subheader {
   padding-left: 30px;
   display: flex;
+  flex-direction: row;
 }
 
 .menu-collapsed {
   max-height: 2.7rem;
   overflow: hidden;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.185);
+  border-radius: 10px;
+  padding: 25px;
+  gap: 10px;
+  color: var(--theme-grey);
+  background-color: var(--theme-white);
+  top: 70px;
+}
+
+#dropdown-features {
+  left: 150px;
+}
+
+#dropdown-company {
+  left: 260px;
+}
+
+.gap-md {
+  gap: 10px;
 }
 
 @media screen and (min-width: 800px) {
@@ -223,17 +249,54 @@ dialog li > button {
     display: flex;
   }
 
-  header {
-    padding: 20px 30px;
-  }
-
   .mobile {
     display: none;
   }
 
   main {
-    max-width: unset;
+    max-width: 1200px;
     text-align: unset;
     flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+
+  #desc {
+    gap: 4vh;
+    padding: unset;
+    margin: unset;
+    padding-top: 100px;
+    max-width: 40%;
+  }
+
+  #hero {
+    width: 40%;
+    padding-left: auto;
+  }
+
+  #hero img.desktop {
+    max-height: 525px;
+  }
+
+  .btn-dark {
+    margin: 0px auto 0px 0px;
+  }
+
+  li > a, li > button {
+    padding: 12px 18px;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.75rem;
+  }
+
+  #companies {
+    margin-top: unset;
   }
 }

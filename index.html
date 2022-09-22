@@ -57,15 +57,40 @@
   <div class="flex-col section-main">
     <header class="flex-row">
       <a href=""><img src="./images/logo.svg" alt="logo-snap"></a>
-      <ul class="desktop mr-auto">
+      <ul class='dropdown' id="dropdown-features">
+        <a class="subheader flex-row">
+          <div class="icon-spacer">
+            <img class="icon-menu" src="./images/icon-todo.svg" alt="icon-todo">
+          </div>
+          <div>Todo List</div>
+        </a>
+        <a class="subheader flex-row">
+          <div class="icon-spacer"><img class="icon-menu" src="./images/icon-calendar.svg" alt="icon-calendar"></div>
+          Calendar
+        </a>
+        <a class="subheader flex-row">
+          <div class="icon-spacer"><img class="icon-menu" src="./images/icon-reminders.svg" alt="icon-reminders"></div>
+          Reminders
+        </a>
+        <a class="subheader flex-row">
+          <div class="icon-spacer"><img class="icon-menu" src="./images/icon-planning.svg" alt="icon-planning"></div>
+          Planning
+        </a>
+      </ul>
+      <ul class='dropdown' id="dropdown-company">
+        <a class="subheader">History</a>
+        <a class="subheader">Our Team</a>
+        <a class="subheader">Blog</a>
+      </ul>
+      <ul class="desktop mr-auto gap-md">
         <li>
-          <button id="features">
+          <button id="nav-features">
             Features
             <img class="icon-arrow" src="images/icon-arrow-down.svg">
           </button>
         </li>
         <li>
-          <button id="company">
+          <button id="nav-company">
             Company
             <img class="icon-arrow" src="images/icon-arrow-down.svg">
           </button>
@@ -73,7 +98,7 @@
         <li><a href="">Careers</a></li>
         <li><a href="">About</a></li>
       </ul>
-      <ul class="desktop">
+      <ul class="desktop gap-md">
         <li class="btn-admin"><a href="">Login</a></li>
         <li class="btn-admin" id="register"><a href="">Register</a></li>
       </ul>

@@ -17,6 +17,16 @@ for (i = 0; i < dialogButtons.length; i++) {
   dialogButtons[i].addEventListener("click", toggleExpandParent);
 }
 
+features = document.querySelector("#nav-features");
+features.dropdown = document.querySelector("#dropdown-features");
+features.addEventListener("click", toggleDropdown);
+
+company = document.querySelector("#nav-company");
+company.dropdown = document.querySelector("#dropdown-company");
+company.addEventListener("click", toggleDropdown);
+
+dropdowns = document.querySelectorAll(".dropdown");
+
 function toggleMenu() {
   dialog.style.display = "flex";
 }
@@ -31,5 +41,17 @@ function toggleExpandParent() {
     par.classList.remove("menu-collapsed");
   } else {
     par.classList.add("menu-collapsed");
+  }
+}
+
+function toggleDropdown() {
+  isSelected = this.dropdown.style.display == "flex";
+  for (i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].style.display = "";
+  }
+  if (isSelected) {
+    this.dropdown.style.display = "";
+  } else {
+    this.dropdown.style.display = "flex";
   }
 }
